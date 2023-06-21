@@ -1,0 +1,73 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px; /* Add margin from the above section */
+}
+
+.contact,
+.social-media,
+.doormat-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h3,
+.social-media h3,
+.doormat-navigation h3 {
+  color: #333;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+}
+
+.contact p,
+.social-media ul,
+.doormat-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-media ul li,
+.doormat-navigation ul li {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.social-media ul li a,
+.doormat-navigation ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    text-align: center; /* Center the content horizontally */
+  }
+
+  .contact,
+  .social-media,
+  .doormat-navigation {
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .footer-text {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Reset the transform */
+    margin-top: 20px; /* Add spacing above the footer text */
+  }
+}
