@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import restauranfood from '../assets/restauranfood.jpg';
 
-function Header() {
+const Header = () => {
   return (
     <header className="header-container">
       <div className="content">

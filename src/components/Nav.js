@@ -2,7 +2,7 @@ import React from 'react';
 import './nav.css';
 import logo from '../assets/Logo.svg';
 
-function Nav() {
+const Nav = () => {
   return (
     <nav>
       <img src={logo} alt="Little Lemon Logo" />

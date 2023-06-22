@@ -6,7 +6,7 @@ import bruchetta from '../assets/bruchetta.svg';
 import basketIcon from '../assets/basket.svg';
 
 
-function Main() {
+const Main = () => {
   return (
     <main>
       <div className="special-container">

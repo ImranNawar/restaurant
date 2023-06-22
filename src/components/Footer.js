@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css'
 import logo from '../assets/Logo.svg';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
       <img src={logo} alt="Little Lemon Logo" />

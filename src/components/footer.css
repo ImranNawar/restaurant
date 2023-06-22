@@ -27,7 +27,7 @@ footer {
 .contact p,
 .social-media ul,
 .doormat-navigation ul {
-  margin: 0;
+  margin: 30;
   padding: 0;
   list-style: none;
 }
@@ -67,6 +67,7 @@ footer {
   .footer-text {
     position: static; /* Remove absolute positioning */
     transform: none; /* Reset the transform */
-    margin-top: 20px; /* Add spacing above the footer text */
+    margin-top: 50px; /* Add spacing above the footer text */
+    padding-top: 50px;
   }
 }

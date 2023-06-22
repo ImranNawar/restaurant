@@ -3,6 +3,7 @@
   background-color: rgb(6, 78, 6);
   color: white;
   padding: 20px;
+  margin-top: 10px;
 }
 
 .content {
@@ -36,9 +37,9 @@
 }
 
 .image {
-  position: absolute;
-  bottom: 45%;
-  left: 70%;
+  position: relative;
+  bottom: -30%;
+  left: 50%;
   width: 15rem;
   height: 15rem;
   object-fit: cover;
@@ -57,10 +58,13 @@
   }
 
   .image {
-    position: static;
+    position: relative;
+    bottom: 0%;
+    left: 17%;
     width: 20rem;
-    /* height: auto; */
-    margin: 20px auto;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10%;
   }
 }
 
@@ -90,8 +94,12 @@
   }
 
   .image {
-    width: 15rem;
-    /* height: auto; */
-    margin: 10px auto 20px;
+    position: relative;
+    bottom: 0%;
+    left: 15%;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10%;
   }
 }

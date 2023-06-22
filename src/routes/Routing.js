@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
-import HomePage from './HomePage'
+import HomePage from './HomePage';
 import BookingPage from './BookingPage';
 import About from './About';
 import Order from './Order';
@@ -12,32 +12,34 @@ import Error from './Error';
 
 import './routing.css';
 
-const App = () => {
+const Routing = () => {
   return (
-    <div className='aaa'>
+    <div className="App">
       <img src={logo} alt="Little Lemon Logo" />
       <Router>
-        <Link to='/'>Home</Link>
-        <Link to='/booking'>BookingPage</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/menu'>Menu</Link>
-        <Link to='/reservations'>Reservations</Link>
-        <Link to='/order'>Order</Link>
-        <Link to='/login'>Login</Link>
+        <ul>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/booking'>BookingPage</Link></li>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/menu'>Menu</Link></li>
+          <li><Link to='/reservations'>Reservations</Link></li>
+          <li><Link to='/order'>Order</Link></li>
+          <li><Link to='/login'>Login</Link></li>
+        </ul>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/booking" element={<BookingPage />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/menu" element={<Menu />}></Route>
-          <Route path="/reservations" element={<Reservations />}></Route>
-          <Route path="/order" element={<Order />}></Route>
-          <Route path="/login" element={<Login />}></Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/booking" element={<BookingPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/login" element={<Login />} />
 
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default Routing;
