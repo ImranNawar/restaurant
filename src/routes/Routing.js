@@ -9,6 +9,7 @@ import Reservations from './Reservations';
 import Login from './Login';
 import Menu from './Menu';
 import Error from './Error';
+import ConfirmedBooking from '../components/ConfirmedBooking';
 
 import './routing.css';
 
@@ -25,6 +26,7 @@ const Routing = () => {
           <li><Link to='/reservations'>Reservations</Link></li>
           <li><Link to='/order'>Order</Link></li>
           <li><Link to='/login'>Login</Link></li>
+          <li><Link to='/confirmation'>ConfirmedBooking</Link></li>
         </ul>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -34,6 +36,7 @@ const Routing = () => {
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/order" element={<Order />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/confirmation" component={ConfirmedBooking} />
 
           <Route path="*" element={<Error />} />
         </Routes>
