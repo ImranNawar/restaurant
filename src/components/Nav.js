@@ -1,23 +1,50 @@
-import React from 'react';
-import './nav.css';
-import logo from '../assets/Logo.svg';
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import LittleLemonLogo from "../static/littlelemon.png";
+import { Link } from "react-router-dom";
+import "./styles/Nav.css";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav>
-      <img src={logo} alt="Little Lemon Logo" />
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/booking">BookingPage</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/menu">Menu</a></li>
-        <li><a href="/reservations">Reservations</a></li>
-        <li><a href="/order">Order Online</a></li>
-        <li><a href="/login">Login</a></li>
+      <div className="hamburger-menu" onClick={handleMenuToggle}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </div>
+      <div className="logo">
+        <img src={LittleLemonLogo} alt="Logo" />
+      </div>
+      <ul className={`links ${isOpen ? "open" : ""}`}>
+        <li>
+          <Link to="/" relative="path">
+            Home
+          </Link>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+        <li>
+          <Link to="/booking" relative="path">
+            Reservations
+          </Link>
+        </li>
+        <li>
+          <a href="#orderonline">Order Online</a>
+        </li>
+        <li>
+          <a href="#login">Login</a>
+        </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Nav;
-
