@@ -16,13 +16,13 @@ const TestimonialCards = () => {
         "It's a great experience. The ambiance is very welcoming and charming. Amazing food and service.",
     },
     {
-      name: "John Lemonson",
+      name: "John Doe",
       photo: "/images/john.png",
       message:
         "Hospitable hosts, delicious dishes, beautiful presentation, wide food list and wonderful dessert.",
     },
     {
-      name: "Mustafa Khan",
+      name: "Mustafaa Khan",
       photo: "/images/mustafa.png",
       message:
         "Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine dining. Highly recommended.",
