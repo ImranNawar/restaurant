@@ -2,7 +2,7 @@
 This GitHub repository contains the code for a stunning restaurant website developed in React as part of the Meta Frontend Developer course. The project showcases a beautiful homepage, a reservation page with form validation, and other common features found in restaurant websites like menu display, customer reviews, and contact information. It utilizes modern frontend development techniques and libraries to deliver an interactive and visually appealing user experience. Feel free to explore the code.
 
 ## Live Demo
-Check out the live demo of Restaurant Website [![Home Page](./public/images/HomePage.png)](https://64980308df9c3f62f8a942e5--thunderous-faun-6dde52.netlify.app/)
+Check out the live demo of Restaurant Website [![Home Page](./public/images/HomePage.png)](https://restaurant-imran.netlify.app/)
 
 ## Features
 - React-based
